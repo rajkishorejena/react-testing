@@ -6,6 +6,13 @@ function App() {
     <div className="App">
       <p>Hello Rajkishore Jena</p>
       <img title="App Icon" alt="img" />
+
+      <input
+        type="text"
+        placeholder="Enter your name"
+        name="username"
+        id="userId"
+      />
     </div>
   );
 }

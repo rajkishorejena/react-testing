@@ -10,6 +10,19 @@ test("First React Test case", () => {
   expect(title).toBeInTheDocument();
 });
 
+test("Input Test case in App components", () => {
+  render(<App />);
+  const checkInput = screen.getByRole("textbox");
+  expect(checkInput).toBeInTheDocument();
+
+  let checkInputPlaceHolder = screen.getByPlaceholderText("Enter your name");
+  expect(checkInputPlaceHolder).toBeInTheDocument();
+
+  expect(checkInput).toHaveAttribute("name", "username");
+  expect(checkInput).toHaveAttribute("id", "userId");
+  expect(checkInput).toHaveAttribute("placeholder", "Enter your name");
+});
+
 // import { render, screen } from '@testing-library/react';
 // import App from './App';
 
