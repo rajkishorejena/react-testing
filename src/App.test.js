@@ -23,6 +23,14 @@ test("Input Test case in App components", () => {
   expect(checkInput).toHaveAttribute("placeholder", "Enter your name");
 });
 
+describe("UI test case", () => {
+  test("UI test case one", () => {
+    render(<App />);
+    const checkInput = screen.getByRole("textbox");
+    expect(checkInput).toHaveAttribute("name", "username");
+  });
+});
+
 // import { render, screen } from '@testing-library/react';
 // import App from './App';
 
