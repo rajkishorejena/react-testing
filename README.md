@@ -1,3 +1,19 @@
+# Writing the Test Case for the React js App
+
+### File Or Folder Name for the Test case
+
+App.test.js
+App.spec.js
+App.test.jsx
+App.spec.jsx
+
+**tests**
+App.test.js
+App.js
+Login.js
+
+Any naming convention we can give inside the **tests** folder
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
