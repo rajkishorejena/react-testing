@@ -1,6 +1,13 @@
 import { render, screen } from "@testing-library/react";
 import App from "./App";
 
+// beforeAll(() => {
+//   console.log("******Called Before All********");
+// });
+// beforeEach(() => {
+//   console.log("******Called Before Each********");
+// });
+
 test("First React Test case", () => {
   render(<App />);
   const text = screen.getByText("Hello Rajkishore Jena");
@@ -39,3 +46,11 @@ describe("UI test case", () => {
 //   const linkElement = screen.getByText(/learn react/i);
 //   expect(linkElement).toBeInTheDocument();
 // });
+
+// afterAll(()=>{
+//   console.log("......Called after all hook ");
+// })
+
+// afterEach(()=>{
+//   console.log(".....after each hook getting called")
+// })
