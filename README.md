@@ -21,7 +21,11 @@ Any naming convention we can give inside the **tests** folder
 beforeAll\
 beforeEach\
 afterAll\
-afterEach\
+afterEach
+
+### Snapshot Testing
+
+Test before production the code you modified
 
 # Getting Started with Create React App
 
