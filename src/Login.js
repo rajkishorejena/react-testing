@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 const Login = () => {
   const [userName, setUsername] = useState("");
+  const [initialState, SetInitialState] = useState("");
   return (
     <div
       style={{
@@ -19,6 +20,10 @@ const Login = () => {
         name="username"
         placeholder="please enter your name"
       />
+      <label>{initialState}</label>
+      <button onClick={() => SetInitialState("Update Button Clicked")}>
+        Update
+      </button>
     </div>
   );
 };

@@ -9,3 +9,12 @@ describe("Validate the Login page", () => {
     expect(userInput.value).toBe("a");
   });
 });
+
+describe("Click event testing with button", () => {
+  test("Button Onclick event test", () => {
+    render(<Login />);
+    const btn = screen.getByRole("button");
+    fireEvent.click(btn);
+    expect(screen.getByText("Update Button Clicked")).toBeInTheDocument();
+  });
+});
