@@ -21,7 +21,10 @@ const Login = () => {
         placeholder="please enter your name"
       />
       <label>{initialState}</label>
-      <button onClick={() => SetInitialState("Update Button Clicked")}>
+      <button
+        data-testid="btn1"
+        onClick={() => SetInitialState("Update Button Clicked")}
+      >
         Update
       </button>
     </div>

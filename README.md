@@ -25,7 +25,29 @@ afterEach
 
 ### Snapshot Testing
 
-Test before production the code you modified
+Test before production the code you modified\
+use cmd "u" to update
+
+### What we should test?
+
+What things we should not test?\
+Important points?\
+Testing component rendering\
+UI elements that we write\
+Functions which we write\
+API testing. \
+Event testing.\
+Props and states\
+UI condition testing | UI state testing\
+What we should test?
+
+### Avoid testing for
+
+External UI library code.\
+No need to test default function of JS and react\
+Sometime we should mock function rather than testing it in details.
+
+### Functional Component method testing..
 
 # Getting Started with Create React App
 

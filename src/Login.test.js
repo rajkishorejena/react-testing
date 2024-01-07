@@ -1,11 +1,26 @@
-import { render } from "@testing-library/react";
+import { fireEvent, render, screen } from "@testing-library/react";
 import Login from "./Login";
-describe("Snapshot Testing", () => {
-  test("Snapshot testing for login Component", () => {
-    const LoginComponent = render(<Login />);
-    expect(LoginComponent).toMatchSnapshot();
+import handleOtherMethod from "./helper";
+
+describe("Functional method testing", () => {
+  test("method testing", () => {
+    render(<Login />);
+    const btn = screen.getByTestId("btn1");
+    fireEvent.click(btn);
+    expect(screen.getByText("Update Button Clicked")).toBeInTheDocument();
+  });
+
+  test("method testing 2", () => {
+    expect(handleOtherMethod()).toMatch("hii");
   });
 });
+
+// describe("Snapshot Testing", () => {
+//   test("Snapshot testing for login Component", () => {
+//     const LoginComponent = render(<Login />);
+//     expect(LoginComponent).toMatchSnapshot();
+//   });
+// });
 
 // import { fireEvent, render, screen } from "@testing-library/react";
 // import Login from "./Login";
