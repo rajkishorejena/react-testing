@@ -2,15 +2,17 @@
 
 ### File Or Folder Name for the Test case
 
-App.test.js
-App.spec.js
-App.test.jsx
-App.spec.jsx
+App.test.js,\
+App.spec.js,\
+App.test.jsx,\
+App.spec.jsx,\
+\
 
-**tests**
-App.test.js
-App.js
-Login.js
+### (**tests**) \
+
+App.test.js \
+App.js \
+Login.js \
 
 Any naming convention we can give inside the **tests** folder
 
